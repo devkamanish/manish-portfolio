@@ -32,20 +32,6 @@ It features a clean, responsive design with smooth animations, dark mode, and an
 
 ---
 
-## 🖼️ Screenshots
-
-### Home Page
-<p align="center">
-  <img src="/portfolio/public/homepage.png" alt="Home Page" width="800">
-</p>
-
-### Projects Page
-<p align="center">
-  <img src="./portfolio//public/ProjectPage.png" alt="Projects Page" width="800">
-</p>
-
----
-
 ## ⚡️ Run Locally
 
 ```bash

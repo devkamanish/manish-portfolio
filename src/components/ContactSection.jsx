@@ -57,10 +57,10 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium">Email</h4>
                   <a
-                    href="mailto:bishtsarthak80@gmail.com"
+                    href="mailto:devkamanish61@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    bishtsarthak80@gmail.com
+                    devkamanish61@gmail.com
                   </a>
                 </div>
               </div>
@@ -73,10 +73,10 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium">Phone</h4>
                   <a
-                    href="tel:+918171467034"
+                    href="tel:+918279382028"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +91 8171467034
+                    +91 8279382028
                   </a>
                 </div>
               </div>
@@ -100,12 +100,12 @@ export const ContactSection = () => {
               <h4 className="font-medium mb-4">Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
                 <a
-                  href="https://www.linkedin.com/in/sarthak-bisht-0586a825b/"
+                  href="https://www.linkedin.com/in/manishdevka/"
                   target="_blank"
                 >
                   <Linkedin />
                 </a>
-                <a href="#" target="_blank">
+                {/* <a href="#" target="_blank">
                   <Twitter />
                 </a>
                 <a
@@ -113,7 +113,7 @@ export const ContactSection = () => {
                   target="_blank"
                 >
                   <Instagram />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -138,7 +138,7 @@ export const ContactSection = () => {
                   name="name"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
-                  placeholder="Sarthak Bisht"
+                  placeholder="Name"
                 />
               </div>
 
@@ -155,7 +155,7 @@ export const ContactSection = () => {
                   name="email"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
-                  placeholder="abc12@gmail.com"
+                  placeholder="abc@gmail.com"
                 />
               </div>
 
@@ -192,3 +192,4 @@ export const ContactSection = () => {
     </section>
   );
 };
+

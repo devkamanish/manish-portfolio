@@ -8,9 +8,9 @@ const projects = [
     image: "/projects/Pro-1.png",
     tags: ["React", "Tailwind CSS", "MongoDB Atlas", "Node.js", "Express.js"],
     demoUrl: "https://streamify-2-dqh1.onrender.com",
-    githubUrl: "https://github.com/sarthakbisht80/Streamify/tree/main/Streamify",
+    githubUrl: "https://github.com/devkamanish/Let-s-Chat",
   },
-
+  
   {
     id: 2,
     title: "TRAVEL BUDDY",
@@ -90,7 +90,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/sarthakbisht80"
+            href="https://github.com/devkamanish"
           >
             Check My Github <ArrowRight size={16} />
           </a>

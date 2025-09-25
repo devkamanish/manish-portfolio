@@ -25,7 +25,7 @@ export const AboutSection = () => {
               techniques to stay at the forefront of the ever-evolving web
               landscape.
             </p>
-
+   
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
               <a href="#contact" className="cosmic-button">
                 {" "}
@@ -78,7 +78,7 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Project Management</h4>
                   <p className="text-muted-foreground">
-                   Driving projects from concept to delivery using agile methodologies, clear communication, and efficient workflows.
+                   Driving projects from concept to delivery using agile methodologies, following  3-tier architecture, clear communication and efficient workflows.
                   </p>
                 </div>
               </div>

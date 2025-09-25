@@ -11,8 +11,8 @@ export const HeroSection = () => {
         <div className="space-y-6">
           <div className="flex justify-center">
             <img
-              src="/profile.jpeg"
-              alt="Sarthak's profile"
+              src="/Profile.jpeg"
+              alt="manish's profile"
               className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-primary shadow-lg opacity-0 animate-fade-in"
             />
           </div>
@@ -20,10 +20,10 @@ export const HeroSection = () => {
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
             <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
             <span className="text-primary opacity-0 animate-fade-in-delay-1">
-              {" "}Sarthak
+              {" "}Manish
             </span>
             <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
-              {" "}Bisht
+              {" "}Devka,
             </span>
              
           </h1>
@@ -35,6 +35,7 @@ export const HeroSection = () => {
                   " Web Developer",
                   " UI/UX Designer",
                   " Web Designer",
+                  " Problem Solver"
                 ]}
                 loop={0} // 0 = infinite loop
                 typeSpeed={10}
@@ -47,7 +48,7 @@ export const HeroSection = () => {
           </h2>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            Full Stack Developer | Building scalable web apps with clean code & great UX. Passionate about React, Node.js, and turning ideas into reality.
+            Full Stack Developer | Building scalable web apps with clean code & great UX. Passionate about React, Express.js, and turning ideas into reality.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
@@ -59,8 +60,8 @@ export const HeroSection = () => {
       </div>
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
-        <span className="text-sm text-muted-foreground mb-2"> Scroll </span>
-        <ArrowDown className="h-5 w-5 text-primary" />
+        {/* <span className="text-sm text-muted-foreground mb-2"> Scroll </span> */}
+        {/* <ArrowDown className="h-5 w-5 text-primary m-2" /> */}
       </div>
     </section>
   );

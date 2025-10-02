@@ -40,7 +40,7 @@ export const HeroSection = () => {
                 loop={0} // 0 = infinite loop
                 typeSpeed={10}
                 deleteSpeed={5}
-                delaySpeed={2000} // wait time before deleting
+                delaySpeed={2000} 
                 cursor
                 cursorStyle="|"
               />

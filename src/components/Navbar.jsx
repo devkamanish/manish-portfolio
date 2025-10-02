@@ -39,16 +39,16 @@ export const Navbar = () => {
   const handleResumeClick = (e) => {
     e.preventDefault();
     // Open Google Drive view link
-    window.open(
-      "https://drive.google.com/file/d/15-DD5XGNXVWT3ESsKOaLsNkncHfs3Sjo/view?usp=sharing",
-      "_blank"
-    );
+    // window.open(
+    //   "https://drive.google.com/file/d/1tlX795Pn94bmYbLG_hemhyj6CaRz3tik/view?usp=sharing",
+    //   "_blank"
+    // );
 
-    // Trigger download
+    
     const downloadLink = document.createElement("a");
     downloadLink.href =
-      "https://drive.google.com/uc?export=download&id=15-DD5XGNXVWT3ESsKOaLsNkncHfs3Sjo";
-    downloadLink.download = "Sarthak_resume.pdf";
+      "https://drive.google.com/file/d/1tlX795Pn94bmYbLG_hemhyj6CaRz3tik/view?usp=sharing";
+    downloadLink.download = "Manish_Devka_resume.pdf";
     downloadLink.style.display = "none";
     document.body.appendChild(downloadLink);
     downloadLink.click();

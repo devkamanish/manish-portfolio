@@ -17,10 +17,11 @@ const projects = [
     description:"A responsive web app built with React, Redux, and Firebase to track expenses, set budgets, and analyze travel spending.",
     image: "/projects/Pro-2.png",
     tags: ["ReactJS", "Firebase", "Redux-Toolkit" ,"TailwindCSS"],
-    demoUrl: "https://travel-expense-tracker-gamma.vercel.app/",
-    githubUrl: "https://github.com/sarthakbisht80/travel-expense-tracker",
+    demoUrl: "https://travel-buddy-roan-one.vercel.app/",
+    githubUrl: "https://github.com/devkamanish/Travel-Buddy",
   },
 ];
+
 
 export const ProjectsSection = () => {
   return (

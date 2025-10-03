@@ -47,7 +47,7 @@ export const Navbar = () => {
     
     const downloadLink = document.createElement("a");
     downloadLink.href =
-      "https://drive.google.com/file/d/1DJavuKLxWMHqG3TzTBZaQi3nPfym_gtd/view";
+      "https://drive.google.com/file/d/1QtTyzLP6GDoqXngyHRjVn5Q6SDivHA8z/view";
     downloadLink.download = "Manish_Devka_resume.pdf";
     downloadLink.style.display = "none";
     document.body.appendChild(downloadLink);

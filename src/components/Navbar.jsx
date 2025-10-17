@@ -36,24 +36,14 @@ export const Navbar = () => {
     };
   }, [isMenuOpen]);
 
-  const handleResumeClick = (e) => {
-    e.preventDefault();
-    // Open Google Drive view link
-    // window.open(
-    //   "https://drive.google.com/file/d/1tlX795Pn94bmYbLG_hemhyj6CaRz3tik/view?usp=sharing",
-    //   "_blank"
-    // );
+const handleResumeClick = (e) => {
+  e.preventDefault();
 
-    
-    const downloadLink = document.createElement("a");
-    downloadLink.href =
-      "https://drive.google.com/file/d/1QtTyzLP6GDoqXngyHRjVn5Q6SDivHA8z/view";
-    downloadLink.download = "Manish_Devka_resume.pdf";
-    downloadLink.style.display = "none";
-    document.body.appendChild(downloadLink);
-    downloadLink.click();
-    document.body.removeChild(downloadLink);
-  };
+  window.open(
+    "https://drive.google.com/file/d/1QtTyzLP6GDoqXngyHRjVn5Q6SDivHA8z/view",
+    "_blank"
+  );
+};
 
   return (
     <>

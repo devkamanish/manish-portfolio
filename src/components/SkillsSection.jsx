@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { cn } from "@/lib/utils"; // Make sure you have this utility
+import { cn } from "@/lib/utils"; // Make sure this utility exists
 
 const skills = [
   // Frontend
@@ -33,19 +33,17 @@ export const SkillsSection = () => {
   );
 
   return (
-    <section id="skills" className="py-24 px-4 relative bg-secondary/30">
-      <div className="container mx-auto max-w-5xl">
-        {/* Hero Image */}
-        <div className="mb-12 flex justify-center">
-          <img
-            src="/skills-hero.png" // This image should be placed in public/skills-hero.png
-            alt="Skills Hero"
-            className="rounded-lg shadow-lg max-w-full h-auto object-cover"
-          />
-        </div>
+    <section
+      id="skills"
+      className="py-24 px-4 relative bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/hero.jpg')" }} // Use your existing image
+    >
+      {/* Overlay for readability */}
+      <div className="absolute inset-0 bg-secondary/60 backdrop-blur-[2px]"></div>
 
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          My <span className="text-primary"> Skills</span>
+      <div className="relative container mx-auto max-w-5xl">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-foreground">
+          My <span className="text-primary">Skills</span>
         </h2>
 
         {/* Category buttons */}
@@ -71,7 +69,7 @@ export const SkillsSection = () => {
           {filteredSkills.map((skill, key) => (
             <div
               key={key}
-              className="bg-card p-6 rounded-lg shadow-xs card-hover"
+              className="bg-card/90 p-6 rounded-lg shadow-xs card-hover backdrop-blur-sm"
             >
               <div className="text-left mb-4">
                 <h3 className="font-semibold text-lg">{skill.name}</h3>

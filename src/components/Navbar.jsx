@@ -22,7 +22,6 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Prevent body scroll when mobile menu is open
   useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = "hidden";
@@ -30,7 +29,7 @@ export const Navbar = () => {
       document.body.style.overflow = "unset";
     }
     
-    // Cleanup on unmount
+    
     return () => {
       document.body.style.overflow = "unset";
     };
@@ -39,11 +38,17 @@ export const Navbar = () => {
 const handleResumeClick = (e) => {
   e.preventDefault();
 
-  window.open(
-    "https://drive.google.com/file/d/1QtTyzLP6GDoqXngyHRjVn5Q6SDivHA8z/view",
-    "_blank"
-  );
+  const fileId = "1QtTyzLP6GDoqXngyHRjVn5Q6SDivHA8z";
+  const downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
+
+  const link = document.createElement("a");
+  link.href = downloadUrl;
+  link.download = "Manish_Deveka_Resume.pdf"; 
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 };
+
 
   return (
     <>

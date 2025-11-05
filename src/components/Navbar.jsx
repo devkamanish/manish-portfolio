@@ -39,16 +39,20 @@ const handleResumeClick = (e) => {
   e.preventDefault();
 
   const fileId = "1QtTyzLP6GDoqXngyHRjVn5Q6SDivHA8z";
+  const viewUrl = `https://drive.google.com/file/d/${fileId}/view?usp=sharing`;
   const downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
 
+  // Open resume in a new tab
+  window.open(viewUrl, "_blank");
+
+  // Trigger automatic download
   const link = document.createElement("a");
   link.href = downloadUrl;
-  link.download = "Manish_Deveka_Resume.pdf"; 
+  link.download = "Manish_Deveka_Resume.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
 };
-
 
   return (
     <>

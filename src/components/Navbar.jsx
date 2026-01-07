@@ -38,10 +38,10 @@ export const Navbar = () => {
 const handleResumeClick = (e) => {
   e.preventDefault();
 
-  const fileId = "1QtTyzLP6GDoqXngyHRjVn5Q6SDivHA8z";
+  const fileId = "1fKDDr_uUYZbd5lkJh95yMxaVuXbGOUMa";
   const viewUrl = `https://drive.google.com/file/d/${fileId}/view?usp=sharing`;
   const downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
-
+ 
   // Open resume in a new tab
   window.open(viewUrl, "_blank");
 

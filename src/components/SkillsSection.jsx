@@ -10,6 +10,8 @@ import {
   FaGithub,
   FaDocker,
 } from "react-icons/fa";
+import { Palette } from "lucide-react";
+import { TbApi } from "react-icons/tb";
 
 import {
   SiTailwindcss,
@@ -20,6 +22,11 @@ import {
   SiPostman,
   SiVercel,
   SiVscodium  ,
+  SiBabel,
+  SiGulp,
+  SiGraphql,
+  SiWebpack,
+
 } from "react-icons/si";
 
 const skills = [
@@ -30,21 +37,25 @@ const skills = [
   { name: "TypeScript", level: 80, category: "frontend", icon: <SiTypescript /> },
   { name: "Tailwind CSS", level: 90, category: "frontend", icon: <SiTailwindcss /> },
   { name: "Redux Toolkit", level: 90, category: "frontend", icon: <SiRedux /> },
+  { name: "UI / UX Principles", level: 75, category: "frontend", icon: <Palette/> },
 
   // Backend
   { name: "Node.js", level: 80, category: "backend", icon: <FaNodeJs /> },
   { name: "Express.js", level: 90, category: "backend", icon: <SiExpress /> },
   { name: "MongoDB", level: 90, category: "backend", icon: <SiMongodb /> },
+  { name: "GraphQL APIs", level: 75, category: "backend", icon: <SiGraphql /> },
   { name: "DeveOps", level: 60, category: "backend", icon: <FaDocker /> },
   { name: "Microservices", level: 75, category: "backend", icon: <FaNodeJs /> },
+  { name: "RESTful APIs", level: 85, category: "backend", icon: <TbApi /> },
 
+  
   // Tools
   { name: "Git/GitHub", level: 90, category: "tools", icon: <FaGithub /> },
   { name: "Postman", level: 80, category: "tools", icon: <SiPostman /> },
-  { name: "VS Code", level: 95, category: "tools", icon: <SiVscodium/> },
-  { name: "Vercel", level: 85, category: "tools", icon: <SiVercel /> },
+  { name: "Webpack", level: 75, category: "tools", icon: <SiWebpack /> },
+  { name: "Babel", level: 70, category: "tools", icon: <SiBabel /> },
+  { name: "Gulp", level: 65, category: "tools", icon: <SiGulp /> },
 ];
-
 const categories = ["all", "frontend", "backend", "tools"];
 
 export const SkillsSection = () => {
